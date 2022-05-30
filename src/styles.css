@@ -17,7 +17,6 @@ button {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-
 /**
  * Sidebar CSS
  */
@@ -38,7 +37,6 @@ button {
   }
 }
 
-
 /**
  * Content CSS
  */
@@ -47,11 +45,6 @@ button {
     margin-left: 180px;
   }
 }
-
-.author {
-  font-size: .8rem;
-}
-
 
 .floating-btn {
   position: fixed;

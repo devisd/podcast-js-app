@@ -1,6 +1,6 @@
 export class Question {
   static create(question) {
-    return fetch('https://podcast-app-15663.firebaseio.com/questions.json', {
+    return fetch('https://moviemania-5dae1-default-rtdb.europe-west1.firebasedatabase.app/questions.json', {
       method: 'POST',
       body: JSON.stringify(question),
       headers: {
@@ -20,7 +20,7 @@ export class Question {
     if (!token) {
       return Promise.resolve('<p class="error">У вас нет токена</p>')
     }
-    return fetch(`https://podcast-app-15663.firebaseio.com/questions.json?auth=${token}`)
+    return fetch(`https://moviemania-5dae1-default-rtdb.europe-west1.firebasedatabase.app/questions.json?auth=${token}`)
       .then(response => response.json())
       .then(response => {
         if (response && response.error) {
